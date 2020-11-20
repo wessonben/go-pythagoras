@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"./pythagoras"
+	"go-pythagoras/pythagoras"
 )
 
 func main() {
@@ -14,8 +14,8 @@ func main() {
 		a, _ := strconv.ParseFloat(os.Args[1], 0)
 		b, _ := strconv.ParseFloat(os.Args[2], 0)
 		hypotenuse := pythagoras.GetHypotenuse(a, b)
-		area := pythagoras.GetHypotenuse(a, b)
-		perimeter := pythagoras.GetHypotenuse(a, b)
+		area := pythagoras.GetArea(a, b)
+		perimeter := pythagoras.GetPerimeter(a, b)
 		fmt.Printf("Results for triangle [%f,%f]:\n", a, b)
 		fmt.Printf("Hypotenuse: %f\n", hypotenuse)
 		fmt.Printf("Area: %f\n", area)
